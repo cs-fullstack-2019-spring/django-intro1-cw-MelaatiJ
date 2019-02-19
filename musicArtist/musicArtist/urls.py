@@ -13,6 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+
+#this sets the path and points it to the music app
+
+
 from django.contrib import admin
 from django.urls import path, include
 

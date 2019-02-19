@@ -4,15 +4,15 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-
+#index function
 def index(request):
     return HttpResponse("This is a bad request. Start with the music route. ")
 
-
+#when this function is called in the url it displays the http response
 def music(request):
     return HttpResponse("Shaggy, brunomars, sade")
 
-
+#when this function is called in the url it displays the http response
 def brunomars(request):
     return HttpResponse("Peter Gene Hernandez (born October 8, 1985), known as Bruno Mars, is an American singer,"
                         " songwriter, multi-instrumentalist, record producer, and dancer. He is known for his stage"
@@ -20,13 +20,15 @@ def brunomars(request):
                         " R&B,funk, pop, soul, reggae, hip hop, and rock. Mars is accompanied by his band, The Hooligans"
                         "who play a variety of instruments such as electric guitar, bass, piano, keyboards, drums and"
                         " horns, and also serve as backup singers and dancers.")
-
+#when the shaggy url is typed it runs this function
 
 def shaggy(request):
     return HttpResponse("Orville Richard Burrell CD (born October 22, 1968), better known by his stage name Shaggy, "
                         "is a Jamaican musician, singer, DJ and United States Marine who fought in the Persian Gulf War"
                         ". He is best known for his hit singles ""Oh Carolina," "Boombastic," "It Wasn't Me""and""Angel"
                 ". He took his stage name from the character Shaggy, from the popular children's TV show Scooby-Doo.")
+
+#when the sade url is typed displays what is written
 
 def sade(request):
     return HttpResponse("Helen Folasade Adu, CBE (Yoruba: Fọláṣadé Adú [fɔ̄láʃādé ādú]; born 16 January 1959), known"
